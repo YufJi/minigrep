@@ -1,0 +1,15 @@
+[package]
+name = "minigrep_binding"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+minigrep = { path = "../minigrep" }
+napi = { version = "2.16.8", default-features = false, features = ["napi4", "napi5", "serde-json", "tokio_rt"] }
+napi-derive = "2.16.8"
+
+[build-dependencies]
+napi-build = "2.0.1"

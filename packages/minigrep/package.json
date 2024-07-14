@@ -1,0 +1,19 @@
+{
+  "name": "minigrep",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:tsc": "tsc",
+    "build:binding": "napi build --cargo-cwd=../../crates/binding --platform --js binding.js --dts binding.d.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@napi-rs/cli": "^2.18.4",
+    "@types/node": "^20.14.10",
+    "minimist": "^1.2.8",
+    "typescript": "^5.5.3"
+  }
+}

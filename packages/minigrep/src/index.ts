@@ -4,6 +4,7 @@ import * as binding from '../binding';
 
 (function main() {
     let start = Date.now();
+    const cwd = process.cwd();
     const args = minimist(process.argv.slice(2));
     const { query, filename } = args as binding.Params;
     
@@ -11,7 +12,7 @@ import * as binding from '../binding';
     
     binding.search({
         query,
-        filename: path.resolve(__dirname, filename),
+        filename: path.resolve(cwd, filename),
         ignoreCase,
     });
 

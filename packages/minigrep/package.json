@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "npm run build:binding && npm run build:tsc",
     "build:tsc": "tsc",
     "build:binding": "napi build --cargo-cwd=../../crates/binding --platform --js binding.js --dts binding.d.ts"
   },

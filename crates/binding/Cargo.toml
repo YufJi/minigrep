@@ -8,7 +8,12 @@ crate-type = ["cdylib"]
 
 [dependencies]
 minigrep = { path = "../minigrep" }
-napi = { version = "2.16.8", default-features = false, features = ["napi4", "napi5", "serde-json", "tokio_rt"] }
+napi = { version = "2.16.8", default-features = false, features = [
+  "napi4",
+  "napi5",
+  "serde-json",
+  "tokio_rt",
+] }
 napi-derive = "2.16.8"
 
 [build-dependencies]

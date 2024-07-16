@@ -2,7 +2,8 @@
   "name": "root",
   "description": "",
   "scripts": {
-    "build": "pnpm --filter \"./packages/*\" run build"
+    "build": "pnpm --filter \"./packages/*\" run build",
+    "format:toml": "npx @taplo/cli format './crates/**/Cargo.toml' './Cargo.toml'"
   },
   "keywords": [],
   "author": "",
